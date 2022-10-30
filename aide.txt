@@ -1,0 +1,5 @@
+Pour ajouter les variables d'environnement de terminal, exécutez ce qui suit : bash export JWT_SECRET='monsecretjwt' export LOG_LEVEL=DEBUG
+
+export TOKEN=`curl --data '{"email" : "abc@xyz.com", "password" : "monmdp"}' --header "Content-Type : application/json" -X POST localhost:8080/auth | jq -r '.token'``
+
+curl -X POST localhost:8080/auth --header "Content-Type: application/json" -d "{\"email\":\"wolf@thedoor.com\", \"password\":\"huff-puff\"}"

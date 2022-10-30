@@ -4,7 +4,7 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
-      rolearn: arn:aws:iam::070489781351:role/UdacityFlaskDeployCBKubectlRole
+      rolearn: arn:aws:iam::070489781351:role/eksctl-simple-jwt-api-nodegroup-n-NodeInstanceRole-19UT7ETCFLRGS
       username: system:node:{{EC2PrivateDNSName}}
 kind: ConfigMap
 metadata:
